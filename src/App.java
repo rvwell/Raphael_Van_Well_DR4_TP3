@@ -77,7 +77,7 @@ class Order {
 
     public Order(Client client, EmailSender emailService) {
         if (client == null) {
-            throw new IllegalArgumentException("Client cannot be null.");
+            throw new IllegalArgumentException("Client não pode ser nulo.");
         }
         this.client = client;
         this.emailService = emailService;
